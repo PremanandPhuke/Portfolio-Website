@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: white;
+    /* -webkit-box-shadow: 0px 5px 10px #666666; */
+    /* -moz-box-shadow: 0px 5px 10px #666666; */
+    /* box-shadow: 0px 5px 10px #666666; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /* padding-top: 10px; */
+    padding: 10px 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+nav h2 {
+    color: rgb(88, 53, 144);
+    font-weight: 700;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+nav .collapse li {
+    /* border: 1px solid black; */
+    width: 120px;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+
+
+
+
+nav .collapse li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all ease-in-out 0.2s;
+    padding: 5px 30px;
+    border-radius: 12px;
+
+}
+
+nav .collapse li a:hover {
+    /* color: rgb(88, 53, 144); */
+    /* font-weight: 1000; */
+    color: white;
+    background-color: rgb(88, 53, 144);
+
+
+}
+
+@media (max-width:800px) {
+    nav .collapse li {
+        width: 80px;
+    }
+
+    nav .collapse li a {
+        padding: 5px 10px;
+    }
+}
+
+/* ######################################################################################################################## */
+
+
+
+.main-content {
+    /* border: 1px solid black; */
+    padding: 100px 0;
+    /* margin-top: 1000px; */
+
+}
+
+
+.myimage img {
+    margin-left: 100px;
+    height: 400px;
+    width: 400px;
+}
+
+.tagline {
+    padding: 100px;
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+    /* font-size: 50px; */
+    font-weight: 700;
+}
+
+.tagline h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.tagline h2 {
+    font-size: 45px;
+    font-weight: 510;
+}
+
+.tagline button {
+    color: white;
+    background-color: rgb(70, 14, 161);
+    /* background-color:linear-gradient(217deg, blue, rgb(70, 14, 161) 70% ); */
+    height: 50px;
+    width: 150px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+
+}
+
+.tagline button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid rgb(70, 14, 161);
+    /* border: 2px solid linear-gradient(217deg, blue, rgb(70, 14, 161) 70% ); */
+    /* transition: ease-in-out 0.3s; */
+
+}
+
+/* ######################################################################################################################## */
+
+
+.about {
+    /* border: 1px solid black; */
+    padding: 30px 10px;
+}
+
+.about .info {
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+}
+
+.about .aboutsection {
+    /* border: 1px solid black; */
+    /* padding: 50px 0; */
+    margin-top: 50px;
+}
+
+.about .intro h1 {
+    /* border: 1px solid black; */
+    padding: 10px 0;
+    /* border-bottom: 1px  solid blue; */
+    /* border-left-width: 10px; */
+}
+
+
+.about img {
+    /* margin-left: 80px; */
+    height: 350px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+.about button {
+    color: rgb(70, 14, 161);
+    border: 2px solid rgb(70, 14, 161);
+    background-color: white;
+    /* background-color:linear-gradient(217deg, blue, rgb(70, 14, 161) 70% ); */
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0;
+    /* margin-bottom: 10px; */
+    transition: ease-in-out 0.3s;
+
+}
+
+.about button:hover {
+    color: white;
+    background-color: rgb(70, 14, 161);
+    border: 2px solid rgb(70, 14, 161);
+    /* border: 2px solid linear-gradient(217deg, blue, rgb(70, 14, 161) 70% ); */
+
+}
+
+.about .intro {
+    padding: 50px;
+}
+
+
+/* ########################################################################################################################################################## */
+
+.skills {
+    /* border: 1px solid black; */
+    padding: 30px 10px;
+
+}
+
+.skills .skillsection {
+    margin-top: 50px;
+}
+
+.lang {
+    width: 100%;
+}
+
+.skills .lang .card {
+
+    padding: 5px 10px;
+    /* height: 100%; */
+    /* padding: 20px 20px; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.skills .lang .card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #b4b4b4;
+    margin: 10px 0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+
+    }
+}
+
+.skills .lang .card .progress-line span {
+    height: 100%;
+    /* width: 80%; */
+    background: rgb(70, 14, 161);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.skills .lang .card .html .progress-line span {
+    width: 75%;
+}
+
+.skills .lang .card .css .progress-line span {
+    width: 55%;
+}
+
+.skills .lang .card .js .progress-line span {
+    width: 45%;
+}
+.skills .lang .card .bs .progress-line span {
+    width: 65%;
+}
+.skills .lang .card .py .progress-line span {
+    width: 30%;
+}
+
+.skills .lang .card .java .progress-line span {
+    width: 65%;
+}
+
+
+.skills .lang .card .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 0.5s linear forwards;
+}
+
+.skills .lang .card .progress-line span::after {
+    position: absolute;
+    /* content: "80%"; */
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 0.5s forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.skills .lang .card .html .progress-line span::after {
+    content: "75%";
+}
+
+.skills .lang .card .css .progress-line span::after {
+    content: "55%";
+}
+
+.skills .lang .card .js .progress-line span::after {
+    content: "45%";
+}
+
+.skills .lang .card .bs .progress-line span::after {
+    content: "65%";
+}
+
+.skills .lang .card .py .progress-line span::after {
+    content: "30%";
+}
+
+.skills .lang .card .java .progress-line span::after {
+    content: "65%";
+}
+
+.lang {
+    /* height: min-content; */
+    /* margin: 0px 50px; */
+    /* margin: 50px 0; */
+    padding: 50px 0;
+    /* border: 1px solid black; */
+}
+
+.skilllist {
+    padding: 20px 0;
+}
+
+.skillbox {
+    margin: 5px;
+}
+
+.skillname {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* ########################################################################################################################################################## */
+
+.projects {
+    /* border: 1px solid black; */
+}
+
+.projects .projectssection {
+    margin-top: 70px;
+    /* border: 1px solid black; */
+}
+
+.projectbox {
+    /* border: 1px solid black; */
+    /* margin-top: 20px; */
+    justify-content: space-between;
+}
+
+.projectbox .card {
+    height: min-content;
+    width: min-content;
+    border-radius: 10px;
+    margin: 40px 5px;
+    box-shadow: 5px 5px 10px rgb(138, 138, 138);
+}
+
+.projectbox .card img {
+    height: 200px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.projectbox .card .data {
+    padding: 10px 0;
+}
+
+.projectbox .card .data a {
+    margin: 10px 0;
+    color: white;
+    font-weight: 550;
+    /* border: 1px solid black; */
+    background-color: rgb(70, 14, 161);
+    border: 2px solid rgb(70, 14, 161);
+
+}
+.projectbox .card .data a:hover{
+    border: 2px solid rgb(70, 14, 161);
+    background: white;
+    color: rgb(70, 14, 161);
+}
+
+/* ########################################################################################################################################################## */
+.connect {
+    /* border: 1px solid black; */
+    /* padding: 50px 0; */
+    margin-bottom: 80px;
+}
+
+.connect .connectssection {
+    margin-top: 70px;
+
+    /* border: 1px solid black */
+}
+
+.socialmedia col {
+    /* border: 1px solid black */
+}
+
+.socialmedia {
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 50px;
+    /* border: 1px solid black */
+}
+
+.socialmedia .contact{
+    /* border: 1px solid black; */
+    padding: 20px 0;
+
+     /* height: 100%; */
+}
+
+.socialmedia .contact .fa{
+    color: rgb(70, 14, 161);
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.socialmedia .contact .fa h{
+    color: black;
+    margin: 0 20px;
+    font-weight: 520;
+}
+.socialmedia .contact p{
+    margin-left: 50px;
+
+}
+
+.socialmedia .logos {
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    padding: 25px 0;
+
+}
+
+.socialmedia .logos .icon {
+    color: rgb(70, 14, 161);
+    /* font-size: 25px; */
+    border: 1px solid rgb(70, 14, 161);
+    justify-content: space-between;
+    /* width: min-content; */
+    line-height:48px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(70, 14, 161);
+    transition: 0.2s ease-in-out;
+}
+
+/* .socialmedia .logos .icon:hover {
+    font-size: 25px;
+    box-shadow: 5px 5px rgb(70, 14, 161);
+} */
+.socialmedia .logos .facebook:hover{
+    /* box-shadow: 0px 0px none; */
+    /* box-shadow: 0px 0px 5px 5px blue; */
+    font-size: 25px;
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+}
+.socialmedia .logos .twitter:hover{
+    /* box-shadow: 0px 0px none; */
+    font-size: 25px;
+    background: rgb(0, 172, 238);
+    color: white;
+   
+    border: 1px solid rgb(0, 172, 238);
+}
+.socialmedia .logos .linkedin:hover{
+    /* box-shadow: 0px 0px none; */
+    line-height: 43px;
+    font-size: 25px;
+    background: rgb(10, 102, 194);
+    color: white;
+    border: 1px solid rgb(10, 102, 194);
+}
+.socialmedia .logos .github:hover{
+    /* box-shadow: 0px 0px none; */
+    line-height:47px;
+    font-size: 30px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+.socialmedia .msg .input {
+    margin: 20px 0;
+}
+
+.socialmedia .msg {
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* border: 1px solid black; */
+}
+
+.socialmedia .msg form {
+    /* border: 1px solid black; */
+    padding: 50px 50px;
+    width: min-content;
+    height: min-content;
+
+}
+
+.socialmedia .msg form label {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.socialmedia .msg form {
+    width: 100%;
+}
+
+.socialmedia .msg form input {
+    font-weight: 600;
+    padding: 0 10px;
+    color: rgb(70, 14, 161);
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid rgb(70, 14, 161);
+}
+
+.socialmedia .msg form button {
+    color: white;
+    background: rgb(70, 14, 161);
+    border: 1px solid rgb(70, 14, 161);
+width: 30%;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+}
+.socialmedia .msg form button:hover{
+    background: transparent;
+    border: 2px solid rgb(70, 14, 161);
+    color: black;
+
+}
