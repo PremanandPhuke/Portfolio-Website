@@ -69,6 +69,10 @@ nav .collapse li a:hover {
 
 /* ######################################################################################################################## */
 
+.container {
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
 
 
 .main-content {
@@ -80,9 +84,40 @@ nav .collapse li a:hover {
 
 
 .myimage img {
-    margin-left: 100px;
+    position: relative;
+    margin-left: 200px;
+    
+
     height: 400px;
     width: 400px;
+    /* transform: scaleX(0); */
+    rotate: 90deg;
+    animation-name: commingimg;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes commingimg {
+    from {
+        margin-left: 1500px;
+        
+    rotate: 360deg;
+
+        /* transform: scaleX(1); */
+    }
+
+    to {
+        margin-left: 100px;
+    rotate: 0deg;
+
+        /* transform: scaleX(1); */
+    }
+}
+
+.myimage img::after {
+    margin-left: 100px;
+
 }
 
 .tagline {
@@ -95,11 +130,40 @@ nav .collapse li a:hover {
 .tagline h1 {
     font-size: 56px;
     font-weight: 700;
+    opacity: 0;
+    animation-name: displaytext;
+    animation-delay: 2.1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes displaytext {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100;
+  }
 }
 
 .tagline h2 {
     font-size: 45px;
     font-weight: 510;
+    opacity: 0;
+    animation-name: displaytext;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.tagline p{
+    opacity: 0;
+    animation-name: displaytext;
+    animation-delay: 2.2s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
 }
 
 .tagline button {
@@ -112,6 +176,12 @@ nav .collapse li a:hover {
     font-size: 17px;
     font-weight: 700;
     transition: ease-in-out 0.3s;
+    opacity: 0;
+    animation-name: displaytext;
+    animation-delay: 2.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 
 }
 
@@ -249,9 +319,11 @@ nav .collapse li a:hover {
 .skills .lang .card .js .progress-line span {
     width: 45%;
 }
+
 .skills .lang .card .bs .progress-line span {
     width: 65%;
 }
+
 .skills .lang .card .py .progress-line span {
     width: 30%;
 }
@@ -389,7 +461,8 @@ nav .collapse li a:hover {
     border: 2px solid rgb(70, 14, 161);
 
 }
-.projectbox .card .data a:hover{
+
+.projectbox .card .data a:hover {
     border: 2px solid rgb(70, 14, 161);
     background: white;
     color: rgb(70, 14, 161);
@@ -420,25 +493,27 @@ nav .collapse li a:hover {
     /* border: 1px solid black */
 }
 
-.socialmedia .contact{
+.socialmedia .contact {
     /* border: 1px solid black; */
     padding: 20px 0;
 
-     /* height: 100%; */
+    /* height: 100%; */
 }
 
-.socialmedia .contact .fa{
+.socialmedia .contact .fa {
     color: rgb(70, 14, 161);
     margin: 0 10px;
     font-size: 20px;
     font-weight: 500;
 }
-.socialmedia .contact .fa h{
+
+.socialmedia .contact .fa h {
     color: black;
     margin: 0 20px;
     font-weight: 520;
 }
-.socialmedia .contact p{
+
+.socialmedia .contact p {
     margin-left: 50px;
 
 }
@@ -457,7 +532,7 @@ nav .collapse li a:hover {
     border: 1px solid rgb(70, 14, 161);
     justify-content: space-between;
     /* width: min-content; */
-    line-height:48px;
+    line-height: 48px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -469,7 +544,7 @@ nav .collapse li a:hover {
     font-size: 25px;
     box-shadow: 5px 5px rgb(70, 14, 161);
 } */
-.socialmedia .logos .facebook:hover{
+.socialmedia .logos .facebook:hover {
     /* box-shadow: 0px 0px none; */
     /* box-shadow: 0px 0px 5px 5px blue; */
     font-size: 25px;
@@ -477,15 +552,17 @@ nav .collapse li a:hover {
     color: white;
     border: 1px solid blue;
 }
-.socialmedia .logos .twitter:hover{
+
+.socialmedia .logos .twitter:hover {
     /* box-shadow: 0px 0px none; */
     font-size: 25px;
     background: rgb(0, 172, 238);
     color: white;
-   
+
     border: 1px solid rgb(0, 172, 238);
 }
-.socialmedia .logos .linkedin:hover{
+
+.socialmedia .logos .linkedin:hover {
     /* box-shadow: 0px 0px none; */
     line-height: 43px;
     font-size: 25px;
@@ -493,14 +570,16 @@ nav .collapse li a:hover {
     color: white;
     border: 1px solid rgb(10, 102, 194);
 }
-.socialmedia .logos .github:hover{
+
+.socialmedia .logos .github:hover {
     /* box-shadow: 0px 0px none; */
-    line-height:47px;
+    line-height: 47px;
     font-size: 30px;
     background: black;
     color: white;
     border: 1px solid black;
 }
+
 .socialmedia .msg .input {
     margin: 20px 0;
 }
@@ -544,12 +623,13 @@ nav .collapse li a:hover {
     color: white;
     background: rgb(70, 14, 161);
     border: 1px solid rgb(70, 14, 161);
-width: 30%;
+    width: 30%;
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s all ease-in-out;
 }
-.socialmedia .msg form button:hover{
+
+.socialmedia .msg form button:hover {
     background: transparent;
     border: 2px solid rgb(70, 14, 161);
     color: black;
