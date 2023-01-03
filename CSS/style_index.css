@@ -635,7 +635,7 @@ nav .collapse li a:hover {
     /* background: rgb(205, 72, 107); */
     background-image: linear-gradient( rgb(138, 58, 185),  rgb(188, 42, 141), rgb(251, 173, 80));
     color: white;
-    line-height: 43px;
+    line-height: 50px;
 
     border: 1px solid rgb(205, 72, 105);
 }
@@ -645,13 +645,14 @@ nav .collapse li a:hover {
     font-size: 25px;
     background: rgb(0, 172, 238);
     color: white;
+    line-height: 50px;
 
     border: 1px solid rgb(0, 172, 238);
 }
 
 .socialmedia .logos .linkedin a:hover {
     /* box-shadow: 0px 0px none; */
-    line-height: 43px;
+    line-height: 50px;
     font-size: 25px;
     background: rgb(10, 102, 194);
     color: white;
