@@ -220,12 +220,12 @@ nav .collapse li a:hover {
 
 
 .about {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 30px 10px;
 }
 
 .about .info {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 40px;
 }
 
