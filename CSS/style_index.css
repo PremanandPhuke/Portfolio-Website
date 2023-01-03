@@ -604,8 +604,13 @@ nav .collapse li a:hover {
     padding: 25px 0;
 
 }
+.socialmedia .logos .icon a{
+    text-decoration: none;
+    /* color: rgb(70, 14, 161); */
 
-.socialmedia .logos .icon {
+}
+.socialmedia .logos .icon a{
+    cursor: pointer;
     color: rgb(70, 14, 161);
     /* font-size: 25px; */
     border: 1px solid rgb(70, 14, 161);
@@ -623,16 +628,19 @@ nav .collapse li a:hover {
     font-size: 25px;
     box-shadow: 5px 5px rgb(70, 14, 161);
 } */
-.socialmedia .logos .facebook:hover {
+.socialmedia .logos .instagram a:hover {
     /* box-shadow: 0px 0px none; */
     /* box-shadow: 0px 0px 5px 5px blue; */
     font-size: 25px;
-    background: blue;
+    /* background: rgb(205, 72, 107); */
+    background-image: linear-gradient( rgb(138, 58, 185),  rgb(188, 42, 141), rgb(251, 173, 80));
     color: white;
-    border: 1px solid blue;
+    line-height: 43px;
+
+    border: 1px solid rgb(205, 72, 105);
 }
 
-.socialmedia .logos .twitter:hover {
+.socialmedia .logos .twitter a:hover {
     /* box-shadow: 0px 0px none; */
     font-size: 25px;
     background: rgb(0, 172, 238);
@@ -641,7 +649,7 @@ nav .collapse li a:hover {
     border: 1px solid rgb(0, 172, 238);
 }
 
-.socialmedia .logos .linkedin:hover {
+.socialmedia .logos .linkedin a:hover {
     /* box-shadow: 0px 0px none; */
     line-height: 43px;
     font-size: 25px;
@@ -650,7 +658,7 @@ nav .collapse li a:hover {
     border: 1px solid rgb(10, 102, 194);
 }
 
-.socialmedia .logos .github:hover {
+.socialmedia .logos .github a:hover {
     /* box-shadow: 0px 0px none; */
     line-height: 47px;
     font-size: 30px;
