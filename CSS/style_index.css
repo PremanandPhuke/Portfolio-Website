@@ -65,6 +65,7 @@ nav .collapse li a:hover {
     nav .collapse li a {
         padding: 5px 10px;
     }
+
 }
 
 /* ######################################################################################################################## */
@@ -86,8 +87,6 @@ nav .collapse li a:hover {
 .myimage img {
     position: relative;
     margin-left: 200px;
-    
-
     height: 400px;
     width: 400px;
     /* transform: scaleX(0); */
@@ -98,18 +97,38 @@ nav .collapse li a:hover {
     animation-fill-mode: forwards;
 }
 
+/* @media (min-width:500px) {
+ img {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+  
+}
+} */
+
+@media (max-width:550px) {
+    .myimage img {
+        position: relative;
+        margin-left: 100px;
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+
 @keyframes commingimg {
     from {
         margin-left: 1500px;
-        
-    rotate: 360deg;
+
+        rotate: 360deg;
 
         /* transform: scaleX(1); */
     }
 
     to {
         margin-left: 100px;
-    rotate: 0deg;
+        rotate: 0deg;
 
         /* transform: scaleX(1); */
     }
@@ -137,13 +156,15 @@ nav .collapse li a:hover {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
+
 @keyframes displaytext {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 100;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
 }
 
 .tagline h2 {
@@ -156,14 +177,15 @@ nav .collapse li a:hover {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
-.tagline p{
+
+.tagline p {
     opacity: 0;
     animation-name: displaytext;
     animation-delay: 2.2s;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    
+
 }
 
 .tagline button {
@@ -198,12 +220,12 @@ nav .collapse li a:hover {
 
 
 .about {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding: 30px 10px;
 }
 
 .about .info {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-bottom: 40px;
 }
 
@@ -226,6 +248,20 @@ nav .collapse li a:hover {
     height: 350px;
     width: 500px;
     /* border: 1px solid black; */
+}
+
+@media (max-width:550px) {
+    .about img {
+        position: relative;
+        /* margin-left: 100px; */
+        height: 200px;
+        width: 300px;
+    }
+
+    .about .intro {
+        padding: 0px 0px;
+    }
+
 }
 
 .about button {
@@ -257,6 +293,23 @@ nav .collapse li a:hover {
 
 
 /* ########################################################################################################################################################## */
+
+@media (max-width:550px) {
+    .skills {
+        padding: 0px 0px;
+    }
+
+    .skills .lang .card {
+        margin-left: 30px;
+    }
+
+    .multitasking img {
+        position: relative;
+        margin-left: 20px;
+        height: 250px;
+        width: 350px;
+    }
+}
 
 .skills {
     /* border: 1px solid black; */
@@ -415,10 +468,17 @@ nav .collapse li a:hover {
     font-weight: 550;
 }
 
+
+
+
 /* ########################################################################################################################################################## */
+
+
 
 .projects {
     /* border: 1px solid black; */
+    /* padding-left: 20px; */
+    padding: 20px 0;
 }
 
 .projects .projectssection {
@@ -469,6 +529,8 @@ nav .collapse li a:hover {
 }
 
 /* ########################################################################################################################################################## */
+
+
 .connect {
     /* border: 1px solid black; */
     /* padding: 50px 0; */
@@ -492,6 +554,9 @@ nav .collapse li a:hover {
     padding: 50px;
     /* border: 1px solid black */
 }
+.socialmedia .directcontact{
+    padding: 0px 50px;
+}
 
 .socialmedia .contact {
     /* border: 1px solid black; */
@@ -499,6 +564,7 @@ nav .collapse li a:hover {
 
     /* height: 100%; */
 }
+
 
 .socialmedia .contact .fa {
     color: rgb(70, 14, 161);
