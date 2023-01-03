@@ -68,6 +68,18 @@ nav .collapse li a:hover {
 
 }
 
+@media (max-width:550px) {
+    nav .collapse li {
+        width: 60px;
+        margin: 0 5px;
+    }
+
+    nav .collapse li a {
+        padding: 5px 5px;
+    }
+
+}
+
 /* ######################################################################################################################## */
 
 .container {
@@ -188,7 +200,7 @@ nav .collapse li a:hover {
 
 }
 
-.tagline button {
+.tagline a {
     color: white;
     background-color: rgb(70, 14, 161);
     /* background-color:linear-gradient(217deg, blue, rgb(70, 14, 161) 70% ); */
@@ -197,6 +209,7 @@ nav .collapse li a:hover {
     border: none;
     font-size: 17px;
     font-weight: 700;
+    line-height: 35px;
     transition: ease-in-out 0.3s;
     opacity: 0;
     animation-name: displaytext;
@@ -207,7 +220,7 @@ nav .collapse li a:hover {
 
 }
 
-.tagline button:hover {
+.tagline a:hover {
     color: black;
     background-color: white;
     border: 2px solid rgb(70, 14, 161);
@@ -263,7 +276,7 @@ nav .collapse li a:hover {
 
 }
 
-.about button {
+.about a {
     color: rgb(70, 14, 161);
     border: 2px solid rgb(70, 14, 161);
     background-color: white;
@@ -273,12 +286,14 @@ nav .collapse li a:hover {
     font-size: 17px;
     font-weight: 700;
     margin: 20px 0;
+   /* padding: 50% 50%; */
     /* margin-bottom: 10px; */
+    line-height: 30px;
     transition: ease-in-out 0.3s;
 
 }
 
-.about button:hover {
+.about a:hover {
     color: white;
     background-color: rgb(70, 14, 161);
     border: 2px solid rgb(70, 14, 161);
@@ -348,7 +363,6 @@ nav .collapse li a:hover {
 @keyframes animate {
     100% {
         transform: scaleX(1);
-
     }
 }
 
