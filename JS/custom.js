@@ -22,10 +22,15 @@
 //     window.location.reload();
 // })
 
-let downloadcv=document.getElementById('downloadcv');
+// let downloadcv=document.getElementById('downloadcv');
 
-downloadcv.addEventListener('click', ()=>{
-    downloadcv.href = `documents/PHUKE PREMANAND_CV.pdf`;
-    downloadcv.setAttribute('download');
-    downloadcv.download = `documents/PHUKE PREMANAND_CV.pdf`;
+// downloadcv.addEventListener('click', ()=>{
+//     downloadcv.href = `documents/PHUKE PREMANAND_CV.pdf`;
+//     downloadcv.setAttribute('download');
+//     downloadcv.download = `documents/PHUKE PREMANAND_CV.pdf`;
+// })
+
+let msgsend=document.getElementById('send');
+msgsend.addEventListener('click', ()=>{
+    alert("Thanks for sharing your message...")
 })
