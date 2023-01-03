@@ -30,7 +30,3 @@
 //     downloadcv.download = `documents/PHUKE PREMANAND_CV.pdf`;
 // })
 
-let msgsend=document.getElementById('send');
-msgsend.addEventListener('click', ()=>{
-    alert("Thanks for sharing your message...")
-})
