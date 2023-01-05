@@ -47,21 +47,21 @@
             </button>
 
             <ul class="nav justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                <li class="nav-item">
+                <li class="nav-item" id="tab1">
                     <a id="refresh1" href="#">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="tab2">
                     <a id="refresh2" href="#about">About</a>
 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="tab3">
                     <a id="refresh3" href="#skills">Skills</a>
 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="tab4">
                     <a id="refresh4" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="tab5">
                     <a id="refresh5" href="#connect">Contact</a>
                 </li>
             </ul>
@@ -74,11 +74,11 @@
         <div class="container">
 
             <div class="row main-content">
-                <div class="col col-lg-6 tagline" >
+                <div class="col col-lg-6 tagline">
                     <h2>Hey! <br></h2>
                     <h1> I AM PREMANAND</h1>
                     <p>Aspiring Front-End Developer @Pimpri Chinchwad Education Trust's NCER, Pune</p>
-                    <a  class="btn" href="#connect">Contact Me</a>
+                    <a class="btn" href="#connect">Contact Me</a>
                 </div>
                 <div class="col col-lg-6 myimage">
                     <img class="banner-image" src="img/banner-image.png" alt="banner-image">
@@ -91,23 +91,25 @@
 
                 <h1 class="aboutsection" align="center">ABOUT</h1> <br>
 
-                <div class="row info justify-content-center" >
+                <div class="row info justify-content-center">
 
-                    <div class="col" align="center">
-                        <img src="img/banner-image-4.png" alt="multitasking">
-                        <a  download href="documents/PHUKE PREMANAND_CV.pdf" class="btn " id="downloadcv" >GET CV</a>
+                    <div class="col " align="center">
+                        <img src="img/banner-image-4.png" alt="multitasking" id="downloadcvimg"><br>
+                        <a download href="documents/PHUKE PREMANAND_CV.pdf" class="btn " id="downloadcv">GET CV</a>
 
                     </div>
-                    <div class="col intro">
-                        <h2>Hi, I am</h2>
-                        <h1>Premanand Phuke</h1>
+                    <div class="col intro" id="intro">
+                        <h2 id="hii">Hi, I am</h2>
+                        <h1 id="myname">Premanand Phuke</h1>
                         <!-- <i class="fas fa-clock"></i> -->
-                        <p> I enjoy creating things that live on the internet. My interest in web development started
+                        <p id="myintro"> I enjoy creating things that live on the internet. My interest in web
+                            development started
                             back
                             in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a
                             custom
                             reblog button taught me a lot about HTML & CSS!</p>
-                        <p>Currently I am pursuing my <b>B.Tech</b> degree in Computer Science from <b>PIMPRI CHINCHWAD
+                        <p id="myintro2">Currently I am pursuing my <b>B.Tech</b> degree in Computer Science from
+                            <b>PIMPRI CHINCHWAD
                                 EDUCATION TRUST'S, NUTAN COLLEGE OF ENGINEERING AND RESEARCH, PUNE</b></p>
                     </div>
 
@@ -121,30 +123,30 @@
 
 
                     <div class="col col-lg-6 col-md-6 col-sm-12 col-12 skilllist">
-                        <div class="card ">
+                        <div class="card visiblity" id="skillcard">
                             <div class="html skillbox">
                                 <span class="skillname">HTML</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line1"><span></span></div>
                             </div>
                             <div class="css skillbox">
                                 <span class="skillname">CSS</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line2"><span></span></div>
                             </div>
                             <div class="js skillbox">
                                 <span class="skillname">JAVASCRIPT</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line3"><span></span></div>
                             </div>
                             <div class="bs skillbox">
                                 <span class="skillname">Bootstrap</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line4"><span></span></div>
                             </div>
                             <div class="py skillbox">
                                 <span class="skillname">PYTHON</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line5"><span></span></div>
                             </div>
                             <div class="java skillbox">
                                 <span class="skillname">JAVA</span>
-                                <div class="progress-line"><span></span></div>
+                                <div class="progress-line" id="progress-line6"><span></span></div>
                             </div>
                         </div>
 
@@ -163,8 +165,8 @@
 
                 <div class="row projectbox" align="center">
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project" id="project1">
+                        <div class="card ">
                             <img src="img/BookOnDoor.jpg" alt="BookOnDoor">
                             <div class="data">
                                 <p>BookOnDoor</p>
@@ -174,8 +176,8 @@
                         </div>
                     </div>
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project "  id="project2">
+                        <div class="card project1">
                             <img src="img/Musify.png" alt="BookOnDoor">
                             <div class="data">
                                 <p>Musify</p>
@@ -185,8 +187,8 @@
                         </div>
                     </div>
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project"  id="project3">
+                        <div class="card project2 ">
                             <img src="img/SwagOfIndia.png" alt="BookOnDoor">
                             <div class="data">
                                 <p>SwagOfIndia</p>
@@ -196,7 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project"  id="project4">
                         <div class="card">
                             <img src="img/Age_Gender.jpg" alt="BookOnDoor">
                             <div class="data">
@@ -207,7 +209,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project"  id="project5">
                         <div class="card">
                             <img src="img/Library.jpg" alt="BookOnDoor">
                             <div class="data">
@@ -218,7 +220,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 project"  id="project6">
                         <div class="card">
                             <img src="img/transcription.jpg" alt="BookOnDoor">
                             <div class="data">
@@ -231,24 +233,30 @@
 
                 </div>
 
+
+
             </div>
+
+          
+
 
             <div class="row connect" id="connect">
                 <h1 class="connectssection" align="center">CONNECT</h1> <br>
 
-                <div class="row socialmedia">
+                <div class="row socialmedia ">
 
                     <div class="col col-lg-8 col-md-6 col-sm-12  msg">
-                        <form action="#">
-                            <h3>Any Message For Me...?</h3>
+                        <form action="#" id="form">
+                            <h3 class="btntext">Any Message For Me...?</h3>
                             <div class="input">
                                 <label for="email">Email Address</label><br>
-                                <input placeholder="xxxxxxx@gmail.com" type="email" name="email" id="emailid" required><br>
+                                <input placeholder="xxxxxxx@gmail.com" type="email" name="email" id="emailid"
+                                    required><br>
                             </div>
 
                             <div class="input">
                                 <label for="email">Message</label><br>
-                                <input placeholder="Hello....!" type="text" name="email" id="emailid" required><br>
+                                <input placeholder="Hello....!" type="text" name="email" id="megforme" required><br>
                             </div>
 
                             <button id="send" type="submit" class="btn">Send</button>
@@ -258,45 +266,51 @@
 
                     <div class="col col-lg-4 col-md-6 col-sm-12 directcontact">
 
-                        <div class="row contact">
+                        <div class="row contact" id="contact">
                             <div class="address">
-                                <i class="	fa fa-address-card "><h>Address</h></i>
+                                <i class="	fa fa-address-card ">
+                                    <h>Address</h>
+                                </i>
                                 <p>Talegaon Dabhade, Pune (410506)</p>
                             </div>
                             <div class="email">
-                                <i class="	fa fa-envelope "><h>Email Id</h></i>
+                                <i class="	fa fa-envelope ">
+                                    <h>Email Id</h>
+                                </i>
                                 <p>premanandphuke2002@gmail.com</p>
                             </div>
                             <div class="phoneno">
-                                <i class="	fa fa-phone "><h>Number</h></i>
+                                <i class="	fa fa-phone ">
+                                    <h>Number</h>
+                                </i>
                                 <p>+91 9356408330</p>
                             </div>
 
                         </div>
-                        <div class="row logos" align="center">
+                        <div class="row logos" align="center" id="logos">
                             <div class="button col col-lg-3 col-md-3 col-sm-3 col-3">
                                 <div class="icon instagram ">
                                     <a href="https://www.instagram.com/persistent_prema/" class="fa fa-instagram "></a>
                                 </div>
-                                <!-- <span>Facebook</span> -->
+
                             </div>
                             <div class="button col col-lg-3 col-md-3 col-sm-3 col-3">
                                 <div class="icon twitter">
                                     <a href="#" class="fa fa-twitter "></a>
                                 </div>
-                                <!-- <span>Twitter</span> -->
+
                             </div>
                             <div class="button col col-lg-3 col-md-3 col-sm-3 col-3">
                                 <div class="icon linkedin">
                                     <a href="https://www.linkedin.com/in/premanand-phuke/" class="fa fa-linkedin "></a>
                                 </div>
-                                <!-- <span>Linkedin</span> -->
+
                             </div>
                             <div class="button col col-lg-3 col-md-3 col-sm-3 col-3 ">
                                 <div class="icon github">
                                     <a href="https://github.com/PremanandPhuke" class="fa fa-github "></a>
                                 </div>
-                                <!-- <span>Github</span> -->
+
                             </div>
                         </div>
                     </div>
