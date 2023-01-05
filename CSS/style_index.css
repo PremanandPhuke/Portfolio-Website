@@ -79,6 +79,17 @@ nav .collapse li a:hover {
     }
 
 }
+@media (max-width:450px) {
+    nav .collapse li {
+        width: 50px;
+        /* margin: 5px 5px; */
+    }
+
+    nav .collapse li a {
+        padding: 5px 5px;
+    }
+
+}
 
 /* ######################################################################################################################## */
 
@@ -233,18 +244,66 @@ nav .collapse li a:hover {
 
 
 .about {
-  
+    /* border: 1px solid black; */
     padding: 30px 10px;
 }
 
 .about .info {
     margin-bottom: 40px;
+
 }
 
+/* .downloadcvimg{
+    border: 1px solid black;
+    margin-left: -500px;
+
+} */
 .about .aboutsection {
     /* border: 1px solid black; */
     /* padding: 50px 0; */
     margin-top: 50px;
+}
+
+.about .intro #hii {
+    opacity: 0;
+    animation-delay: 1.5s;
+
+}
+
+.about .intro #myname {
+    opacity: 0;
+    animation-delay: 1.8s;
+
+}
+
+.about .intro #myintro {
+    opacity: 0;
+    animation-delay: 2.1s;
+
+}
+
+.about .intro #myintro2 {
+    opacity: 0;
+    animation-delay: 2.4s;
+
+}
+
+.introstyle {
+    opacity: 0;
+    animation-name: displaytext2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displaytext2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
 }
 
 .about .intro h1 {
@@ -256,11 +315,64 @@ nav .collapse li a:hover {
 
 
 .about img {
-    /* margin-left: 80px; */
+    margin-left: -1500px;
+
     height: 350px;
     width: 500px;
     /* border: 1px solid black; */
+    /* margin-right: 100px; */
 }
+
+.commingstyle {
+    margin-left: -1500px;
+    rotate: 360deg;
+    animation-name: displaydownload;
+    /* animation-delay: 2.5s; */
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displaydownload {
+    from {
+        margin-left: -1500px;
+        rotate: -360deg;
+
+    }
+
+    to {
+        margin-left: 0px;
+        rotate: 0deg;
+
+    }
+
+}
+
+.commingstyle2 {
+    margin-left: -1500px;
+    /* rotate: 360deg; */
+    animation-name: displaydownload2;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displaydownload2 {
+    from {
+        margin-left: -1500px;
+        /* rotate: -360deg; */
+
+    }
+
+    to {
+        margin-left: 0px;
+        /* rotate: 0deg; */
+
+    }
+
+}
+
 
 @media (max-width:550px) {
     .about img {
@@ -276,6 +388,8 @@ nav .collapse li a:hover {
 
 }
 
+
+
 .about a {
     color: rgb(70, 14, 161);
     border: 2px solid rgb(70, 14, 161);
@@ -286,10 +400,11 @@ nav .collapse li a:hover {
     font-size: 17px;
     font-weight: 700;
     margin: 20px 0;
-   /* padding: 50% 50%; */
+    /* padding: 50% 50%; */
     /* margin-bottom: 10px; */
     line-height: 30px;
     transition: ease-in-out 0.3s;
+    margin-left: -700px;
 
 }
 
@@ -325,6 +440,7 @@ nav .collapse li a:hover {
     }
 }
 
+
 .skills {
     /* border: 1px solid black; */
     padding: 30px 10px;
@@ -335,12 +451,18 @@ nav .collapse li a:hover {
     margin-top: 50px;
 }
 
+
+
 .lang {
     width: 100%;
 }
 
-.skills .lang .card {
+#card {
+    margin-left: -500px;
+}
 
+.skills .lang .card {
+    /* opacity: 0; */
     padding: 5px 10px;
     /* height: 100%; */
     /* padding: 20px 20px; */
@@ -358,6 +480,8 @@ nav .collapse li a:hover {
     transform: scaleX(0);
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation-play-state: paused;
+
 }
 
 @keyframes animate {
@@ -412,6 +536,8 @@ nav .collapse li a:hover {
     border-top-color: #000;
     opacity: 0;
     animation: showText2 0.5s 0.5s linear forwards;
+    /* animation-play-state: paused; */
+
 }
 
 .skills .lang .card .progress-line span::after {
@@ -427,6 +553,8 @@ nav .collapse li a:hover {
     border-radius: 3px;
     opacity: 0;
     animation: showText2 0.5s 0.5s forwards;
+    /* animation-play-state: paused; */
+
 }
 
 @keyframes showText2 {
@@ -491,7 +619,7 @@ nav .collapse li a:hover {
 .projects {
     /* border: 1px solid black; */
     /* padding-left: 20px; */
-    padding: 20px 0;
+    padding: 20px 0px;
 }
 
 .projects .projectssection {
@@ -499,11 +627,9 @@ nav .collapse li a:hover {
     /* border: 1px solid black; */
 }
 
-.projectbox {
-    /* border: 1px solid black; */
-    /* margin-top: 20px; */
-    justify-content: space-between;
-}
+
+
+
 
 .projectbox .card {
     height: min-content;
@@ -541,6 +667,27 @@ nav .collapse li a:hover {
     color: rgb(70, 14, 161);
 }
 
+.project{
+    margin-left: -2500px;
+    animation-name: displayproject;
+    /* animation-delay: 1s; */
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes displayproject {
+    from{
+    margin-left: -2000px;
+
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+
 /* ########################################################################################################################################################## */
 
 
@@ -567,7 +714,8 @@ nav .collapse li a:hover {
     padding: 50px;
     /* border: 1px solid black */
 }
-.socialmedia .directcontact{
+
+.socialmedia .directcontact {
     padding: 0px 50px;
 }
 
@@ -604,12 +752,14 @@ nav .collapse li a:hover {
     padding: 25px 0;
 
 }
-.socialmedia .logos .icon a{
+
+.socialmedia .logos .icon a {
     text-decoration: none;
     /* color: rgb(70, 14, 161); */
 
 }
-.socialmedia .logos .icon a{
+
+.socialmedia .logos .icon a {
     cursor: pointer;
     color: rgb(70, 14, 161);
     /* font-size: 25px; */
@@ -633,7 +783,7 @@ nav .collapse li a:hover {
     /* box-shadow: 0px 0px 5px 5px blue; */
     font-size: 25px;
     /* background: rgb(205, 72, 107); */
-    background-image: linear-gradient( rgb(138, 58, 185),  rgb(188, 42, 141), rgb(251, 173, 80));
+    background-image: linear-gradient(rgb(138, 58, 185), rgb(188, 42, 141), rgb(251, 173, 80));
     color: white;
     line-height: 50px;
 
@@ -668,6 +818,33 @@ nav .collapse li a:hover {
     border: 1px solid black;
 }
 
+.socialmedia .contact{
+    opacity: 0;
+    animation-name: displaycontact;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.socialmedia .logos{
+    opacity: 0;
+    animation-name: displaycontact;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+@keyframes displaycontact {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
 .socialmedia .msg .input {
     margin: 20px 0;
 }
@@ -679,13 +856,39 @@ nav .collapse li a:hover {
     /* border: 1px solid black; */
 }
 
+
+
+
 .socialmedia .msg form {
     /* border: 1px solid black; */
     padding: 50px 50px;
     width: min-content;
     height: min-content;
+    margin-left: -800px;
+    animation-name: displayform;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 
 }
+
+/* .formanimation{
+   
+    animation-play-state: paused;
+} */
+
+@keyframes displayform {
+    from{
+    margin-left: -800px;
+
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
 
 .socialmedia .msg form label {
     margin: 5px 0;
@@ -723,3 +926,4 @@ nav .collapse li a:hover {
     color: black;
 
 }
+
