@@ -22,6 +22,7 @@
 
 
 nav h2 {
+    cursor: pointer;
     color: rgb(88, 53, 144);
     font-weight: 700;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -624,10 +625,66 @@ nav .collapse li a:hover {
 
 .projects .projectssection {
     margin-top: 70px;
+
     /* border: 1px solid black; */
 }
 
 
+.projectbox .carousel-inner img{
+    height: 300px;
+    width: 500px;
+}
+@media (max-width:1200px) {
+    .projectbox .carousel-inner img{
+        height: 250px;
+        width: 300px;
+    }
+.projectbox .carousel-inner .btn{
+    margin: 0px 20px;
+
+}
+
+@media (max-width:800px) {
+    .projectbox .carousel-inner .img{
+       display: none;
+    }
+
+}
+@media (max-width:500px) {
+    .carousel{
+        margin-left: 10px;
+    }
+}
+.carousel{
+    margin-left: 15px;
+}
+
+
+}
+.projectbox .carousel-inner {
+    /* background-color: blue; */
+    padding: 20px 20px;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(150deg,rgb(70, 14, 161),rgb(224, 208, 232) );
+    transition: 0.5s all ease-in-out;
+    color: white;
+}
+
+.projectbox .carousel-inner .projectdata{
+    /* margin-top: 20px; */
+    padding: 50px 80px;
+}
+.projectbox .carousel-inner .btn{
+    /* margin-bottom: 50px; */
+    border: 1px solid white;
+    margin: 20px 20px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.projectbox .carousel-inner .btn:hover{
+    /* background: rgb(70, 14, 161); */
+    box-shadow: 10px 10px rgb(131, 9, 237);
+}
 
 
 
