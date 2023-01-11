@@ -1,9 +1,8 @@
-
-// let btn1= document.getElementById('refresh1')
-// let btn2= document.getElementById('refresh2')
-// let btn3= document.getElementById('refresh3')
-// let btn4= document.getElementById('refresh4')
-// let btn5= document.getElementById('refresh5')
+// var btn1= document.getElementById('refresh1')
+// var btn2= document.getElementById('refresh2')
+// var btn3= document.getElementById('refresh3')
+// var btn4= document.getElementById('refresh4')
+// var btn5= document.getElementById('refresh5')
 
 
 
@@ -30,42 +29,43 @@
 //     downloadcv.download = `documents/PHUKE PREMANAND_CV.pdf`;
 // })
 
-let downloadcv = document.getElementById('downloadcv');
-let downloadcvimg = document.getElementById('downloadcvimg');
-let hii = document.getElementById('hii');
-let myname = document.getElementById('myname');
-let myintro = document.getElementById('myintro');
-let myintro2 = document.getElementById('myintro2');
-let skillcard = document.getElementById('skillcard');
+var downloadcv = document.getElementById('downloadcv');
+var downloadcvimg = document.getElementById('downloadcvimg');
+var hii = document.getElementById('hii');
+var myname = document.getElementById('myname');
+var myintro = document.getElementById('myintro');
+var myintro2 = document.getElementById('myintro2');
+var skillcard = document.getElementById('skillcard');
 
-let progress_line1 = document.getElementById("progress-line1");
-let progress_line2 = document.getElementById("progress-line2");
-let progress_line3 = document.getElementById("progress-line3");
-let progress_line4 = document.getElementById("progress-line4");
-let progress_line5 = document.getElementById("progress-line5");
-let progress_line6 = document.getElementById("progress-line6");
+var progress_line1 = document.getElementById("progress-line1");
+var progress_line2 = document.getElementById("progress-line2");
+var progress_line3 = document.getElementById("progress-line3");
+var progress_line4 = document.getElementById("progress-line4");
+var progress_line5 = document.getElementById("progress-line5");
+var progress_line6 = document.getElementById("progress-line6");
 
-let project1 = document.getElementById('project1');
-let project2 = document.getElementById('project2');
-let project3 = document.getElementById('project3');
-let project4 = document.getElementById('project4');
-let project5 = document.getElementById('project5');
-let project6 = document.getElementById('project6');
+var project1 = document.getElementById('project1');
+var project2 = document.getElementById('project2');
+var project3 = document.getElementById('project3');
+var project4 = document.getElementById('project4');
+var project5 = document.getElementById('project5');
+var project6 = document.getElementById('project6');
 
-let form = document.getElementById('form');
-let logos = document.getElementById('logos');
-let contact = document.getElementById('contact');
+var form = document.getElementById('form');
+var logos = document.getElementById('logos');
+var contact = document.getElementById('contact');
 
-let emailid = document.getElementById('emailid');
-let megforme = document.getElementById('megforme');
-let send = document.getElementById('send');
+var emailid = document.getElementById('emailid').value;
+var megforme = document.getElementById('megforme').value;
+var send = document.getElementById('send');
 
-let tab1=document.getElementById('tab1');
-let tab2=document.getElementById('tab2');
-let tab3=document.getElementById('tab3');
-let tab4=document.getElementById('tab4');
-let tab5=document.getElementById('tab5');
+var tab1 = document.getElementById('tab1');
+var tab2 = document.getElementById('tab2');
+var tab3 = document.getElementById('tab3');
+var tab4 = document.getElementById('tab4');
+var tab5 = document.getElementById('tab5');
 
+var portfolio= document.getElementById('portfolio');
 
 window.addEventListener("scroll", function () {
 
@@ -78,9 +78,7 @@ window.addEventListener("scroll", function () {
         myname.classList.add("introstyle");
         myintro.classList.add("introstyle");
         myintro2.classList.add("introstyle");
-
     }
-
     if (window.pageYOffset >= 1300) {
         // skillcard.classList.add("visiblity");
         progress_line1.style.animationPlayState = 'running';
@@ -89,32 +87,31 @@ window.addEventListener("scroll", function () {
         progress_line4.style.animationPlayState = 'running';
         progress_line5.style.animationPlayState = 'running';
         progress_line6.style.animationPlayState = 'running';
-
     }
-    if (window.pageYOffset >= 2015) {
-        project1.style.animationPlayState = 'running';
-        project2.style.animationPlayState = 'running';
-        project3.style.animationPlayState = 'running';
-        project4.style.animationPlayState = 'running';
-        project5.style.animationPlayState = 'running';
-        project6.style.animationPlayState = 'running';
-
-    }
-    if (window.pageYOffset >= 3000) {
+    // if (window.pageYOffset >= 2015) {
+    //     project1.style.animationPlayState = 'running';
+    //     project2.style.animationPlayState = 'running';
+    //     project3.style.animationPlayState = 'running';
+    //     project4.style.animationPlayState = 'running';
+    //     project5.style.animationPlayState = 'running';
+    //     project6.style.animationPlayState = 'running';
+    // }
+    if (window.pageYOffset >= 2500) {
         form.style.animationPlayState = 'running';
         contact.style.animationPlayState = 'running';
         logos.style.animationPlayState = 'running';
-
     }
-
 })
 
 
-if(window.innerWidth<450){
+if (window.innerWidth < 450) {
     tab1.classList.add('col');
     tab2.classList.add('col');
     tab3.classList.add('col');
     tab4.classList.add('col');
     tab5.classList.add('col');
-
 }
+
+portfolio.addEventListener('click', ()=>{
+    window.location.reload();
+})
