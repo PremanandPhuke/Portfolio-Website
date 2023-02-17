@@ -20,7 +20,9 @@
 }
 
 
-
+#nav{
+    background-color: white;
+}
 nav h2 {
     cursor: pointer;
     color: rgb(88, 53, 144);
@@ -91,6 +93,8 @@ nav .collapse li a:hover {
     }
 
 }
+
+
 
 /* ######################################################################################################################## */
 
@@ -633,6 +637,7 @@ nav .collapse li a:hover {
 .projectbox .carousel-inner img{
     height: 300px;
     width: 500px;
+    border-radius: 12px;
 }
 @media (max-width:1200px) {
     .projectbox .carousel-inner img{
@@ -664,6 +669,7 @@ nav .collapse li a:hover {
 .projectbox .carousel-inner {
     /* background-color: blue; */
     padding: 20px 20px;
+    border-radius: 10px;
     /* border: 1px solid black; */
     background-image: linear-gradient(150deg,rgb(70, 14, 161),rgb(224, 208, 232) );
     transition: 0.5s all ease-in-out;
@@ -684,11 +690,13 @@ nav .collapse li a:hover {
 .projectbox .carousel-inner .btn:hover{
     /* background: rgb(70, 14, 161); */
     box-shadow: 10px 10px rgb(131, 9, 237);
+
+
 }
 
 
 
-.projectbox .card {
+/* .projectbox .card {
     height: min-content;
     width: min-content;
     border-radius: 10px;
@@ -712,7 +720,6 @@ nav .collapse li a:hover {
     margin: 10px 0;
     color: white;
     font-weight: 550;
-    /* border: 1px solid black; */
     background-color: rgb(70, 14, 161);
     border: 2px solid rgb(70, 14, 161);
 
@@ -727,7 +734,6 @@ nav .collapse li a:hover {
 .project{
     margin-left: -2500px;
     animation-name: displayproject;
-    /* animation-delay: 1s; */
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -742,7 +748,7 @@ nav .collapse li a:hover {
     to{
         margin-left: 0px;
     }
-}
+} */
 
 
 /* ########################################################################################################################################################## */
@@ -882,7 +888,7 @@ nav .collapse li a:hover {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 .socialmedia .logos{
     opacity: 0;
@@ -891,7 +897,7 @@ nav .collapse li a:hover {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 @keyframes displaycontact {
     from{
@@ -927,7 +933,7 @@ nav .collapse li a:hover {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 
 }
 
