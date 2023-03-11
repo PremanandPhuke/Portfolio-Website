@@ -123,7 +123,19 @@ nav .collapse li a:hover {
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    /* -webkit-box-shadow: 0px 0px 20px #666666;
+    -moz-box-shadow: 0px 0px 20px #666666;
+    box-shadow: 0px 0px 20px #666666; */
+    filter: drop-shadow(15px 15px 20px  #555);
+    /* filter: drop-shadow(10px 10px 10px  #555); */
+
 }
+
+/* .myimage .banner-image{
+        -webkit-box-shadow: 0px 0px 20px #666666;
+    -moz-box-shadow: 0px 0px 20px #666666;
+    box-shadow: 0px 0px 20px #666666;
+} */
 
 /* @media (min-width:500px) {
  img {
@@ -183,6 +195,7 @@ nav .collapse li a:hover {
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes displaytext {
@@ -324,6 +337,9 @@ nav .collapse li a:hover {
 
     height: 350px;
     width: 500px;
+    filter: drop-shadow(5px 5px 10px  #555);
+
+    /* filter: drop-shadow(5px 5px 10px #555); */
     /* border: 1px solid black; */
     /* margin-right: 100px; */
 }
@@ -443,6 +459,11 @@ nav .collapse li a:hover {
         height: 250px;
         width: 350px;
     }
+}
+
+.multitasking img {
+    filter: drop-shadow(5px 5px 10px  #555);
+
 }
 
 
